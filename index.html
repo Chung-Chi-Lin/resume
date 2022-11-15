@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- min-vh-100:當內容少還是會有100%高度，超過可以會往上放大 -->
+  <header class="min-vh-100 position-relative">
+    <div class="deco-box position-absolute top-0 start-0"></div>
+    <div class="deco-box position-absolute bottom-0 end-0"></div>
+    <div class="position-absolute bg-cover bg-attachment-fixed"
+    style="top: 30px; left:30px; right: 30px; bottom: 30px; background-image: url(https://images.unsplash.com/photo-1612282130134-49784d98ac61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2118&q=80);"></div>
+    <!-- 定位最中間， translate-middle bootstrap元素置中-->
+    <div class="position-absolute top-50 start-50 translate-middle
+    text-center text-white">
+      <h1 class="display-1 fw-bold">林 忠其</h1>
+      <hr class="mb-1 mx-n3">
+      <h2>Chung Chi - Lin</h2>
+      <p>不停學習才是往前的唯一途徑</p>
+    </div>
+  </header>
+  <!--  自我介紹區塊  -->
+  <div class="container py-5">
+    <!-- gy-3:上下 gutter 推移 3， 圖片、文字置中， 使桌面版呈現反轉排版 -->
+    <div class="row gy-3 justify-content-center flex-md-row-reverse">
+      <div class="col-md-4">
+        <img class="w-100 object-fit-cover" height="500" src="https://images.unsplash.com/photo-1612282131240-6e878907d0f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1642&q=80" alt="">
+      </div>
+      <div class="col-md-5 d-flex align-items-center">
+        <!-- 包裹 div 是為了讓 d-flex 為一區塊 -->
+        <div>
+          <h2 class="display-4">我的冒險故事 : </h2>
+          <p>你場作市黨；來說覺些政心政地起紅成就家因色回高一然著開的特眼單前了為就生的知為話絕車之是覺的生住主其起樣存，的之那但了易電我生作升名國。隨是地做間格有</p>
+          <p>：字蘭眼是……一但完我因養如回時期禮適大只高望經百苦，明病爸己毛年人意；外東意興先解想到保管現地問中議易的倒大下，海會高在外氣列色世自女利老影親親爾新然己有的位。</p>
+          <a href="#" class="btn btn-outline-primary mt-4 w-100">看更多關於我的故事!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 三欄式卡片運用  -->
+  <!-- 背景顏色、響應式間距 -->
+  <div class="bg-light p-md-5 py-5 m-md-5">
+    <div class="container">
+      <h2 class="display-4 text-center mb-4">
+        我的實戰作品 :
+      </h2>
+      <!-- 三張卡片響應式格線排版-->
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col">
+          <!-- 卡片樣式，設定高度使圖片一致 -->
+          <div class="card text-white border-5 h-100">
+            <img src="https://images.unsplash.com/photo-1668067446629-307d4ef9e0f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img h-100" alt="...">
+            <!-- top-auto 需要去變數內 position 修改新增 auto 可以使用，bg-dark-gradient 自訂漸層 -->
+            <div class="card-img-overlay top-auto bg-dark-gradient">
+              <h5 class="card-title">有效率的學習方式</h5>
+              <p class="card-text">場作市黨；來說覺些政心政地起紅成就家因色回高一然著開的特眼單前了為就生的知為話絕車之是覺的生住主其起樣存，的之那但了易電我生作升名國。隨是地做間格</p>
+              <!-- 延伸連結但因為有絕對定位故不會整組卡片都可以點擊到 -->
+              <a class="btn btn-outline-light w-100 stretched-link">看作品</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-white border-5 h-100">
+            <img src="https://images.unsplash.com/photo-1668426847233-94aed2826199?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" class="h-100 card-img" alt="...">
+            <div class="card-img-overlay top-auto bg-dark-gradient">
+              <h5 class="card-title">有效率的學習方式</h5>
+              <p class="card-text">場作市黨；來說覺些政心政地起紅成就家因色回高一然著開的特眼單前了為就生的知為話絕車之是覺的生住主其起樣存，的之那但了易電我生作升名國。隨是地做間格</p>
+              <a href="#" class="btn btn-outline-light w-100 stretched-link">看作品</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-white h-100 border-5">
+            <img src="https://images.unsplash.com/photo-1668403778778-7319158b51ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="h-100 card-img" alt="...">
+            <div class="card-img-overlay top-auto bg-dark-gradient">
+              <h5 class="card-title">有效率的學習方式</h5>
+              <p class="card-text">場作市黨；來說覺些政心政地起紅成就家因色回高一然著開的特眼單前了為就生的知為話絕車之是覺的生住主其起樣存，的之那但了易電我生作升名國。隨是地做間格</p>
+              <a href="#" class="btn btn-outline-light w-100 stretched-link">看作品</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer 製作及表單驗證樣式調整 -->
+  <footer class="bg-primary p-5 text-white">
+    <div class="container">
+      <h2 class="display-4 text-center">做個朋友吧 : </h2>
+      <!-- 左半部聯繫方式 -->
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <p>作市黨來說覺些說覺些政心政</p>
+          <h3 class="h4">聯絡方式</h3>
+          <!-- 取消 li 前面的黑點 -->
+          <ul class="list-unstyled">
+            <!-- icon 須先加入 link 連結方可使用 -->
+            <li><i class="bi bi-envelope-at"></i> aaaaaaa@gmail.com</li>
+            <li><i class="bi bi-telephone"></i> 0987-654-321</li>
+          </ul>
+          <h3 class="h4 mt-5">社群關注</h3>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-instagram"></i> chichi-556</li>
+            <li><i class="bi bi-facebook"></i> fb.me54321</li>
+            <li><i class="bi bi-line"></i> 0987654321</li>
+            <li class="pt-5"><i class="bi bi-c-circle"></i> 2022by 林77. created with test.</li>
+          </ul>
+        </div>
+        <!-- 右半部表單驗證，可參考 bootstrap 提供樣板修改 -->
+        <form class="col-md-5 needs-validation" novalidate>
+          <div class="row g-2">
+            <div class="col-md-6">
+              <label for="validationServer01" class="form-label">姓氏 *</label>
+              <input type="text" class="form-control" id="validationServer01" placeholder="王" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                請輸入 姓
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationServer02" class="form-label">名 *</label>
+              <input type="text" class="form-control" id="validationServer02" placeholder="美玉" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                請輸入 名
+              </div>
+            </div>
+            <div class="mb-3 col-12">
+              <label for="exampleFormControlInput1" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required="">
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                請輸入 Email
+              </div>
+            </div>
+            <div class="mb-3 col-12">
+              <label for="exampleFormControlTextarea1" class="form-label">留些訊息給我吧 *</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              <div class="valid-feedback">
+                Thank you!
+              </div>
+            </div>
+            <div class="text-end col-12">
+              <button type="submit" class="btn btn-outline-light">送出表單</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+</body>
+</html>
